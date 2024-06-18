@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    color:rgb(230, 160, 81)
+}
+
+.message {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color:rgb(230, 94, 40)
+}
+
+.countdown {
+    font-size: 1em;
+    color: rgb(199, 87, 162)
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0400ff;
+    color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: #5273dfe3;
+}
+
+.module {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module-content {
+    background-color: #fefefe;
+    margin: 18% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input,
+form button {
+    margin: 10px 0;
+}
+
+#employeeListModule {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.employee-list-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; 
+}
+
+.employee-list-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.employee-list-content th, .employee-list-content td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+.employee-list-content th {
+    background-color: #f2f2f2;
+}
+
+.employee-list-content tr:hover {
+    background-color: #b5c6f7;
+}

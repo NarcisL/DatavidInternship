@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datavid Cake Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-title">
+            <img src="logo.png" alt="Datavid Logo" class="logo">
+            <h1>Cake-Tracker</h1>
+        </div>
+        <p class="message">No employee was born today :(</p>
+        <p class="countdown"></p>
+        <div class="buttons">
+            <button id="show-employees">Show all employees</button>
+            <button id="confirm-admin">Confirm admin status</button>
+        </div>
+    </div>
+
+    <div id="employeeListModule">
+        <div class="employee-list-content">
+            <span class="close-button">&times;</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                        <th>Birth Date</th>
+                        <th id="actionsHeader" style="display: none;">Actions</th> 
+                    </tr>
+                </thead>
+                <tbody id="employeeListBody">
+                </tbody>
+            </table>
+            <button id="filterByBirthday">Filter by closest birthday</button>
+        </div>
+    </div>
+
+    <div id="adminModule" class="module">
+        <div class="module-content">
+            <span class="close-button">&times;</span>
+            <form id="adminForm">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="employeeModule" class="module">
+        <div class="module-content">
+            <span class="close-button">&times;</span>
+            <form id="employeeForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="birthDate">Birth Date:</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
